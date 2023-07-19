@@ -11,8 +11,8 @@ import java.util.Properties;
  * via the "profile" system property, or a default properties file is used
  * if the "profile" property is not set.
  *
- * @author Your Name
- * @version 1.0
+ * @author Joris Boschmans
+ * @version 0.1
  * @since 2023-07-19
  */
 public class PropManager {
