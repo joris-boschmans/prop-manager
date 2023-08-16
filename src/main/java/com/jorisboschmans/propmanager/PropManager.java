@@ -34,7 +34,7 @@ public class PropManager {
         }
 
         // Load the properties
-        try (InputStream input = new FileInputStream(propertiesFilename)) {
+        try (InputStream input = PropManager.class.getClassLoader().getResourceAsStream(propertiesFilename)) {
             properties.load(input);
         } catch (IOException ex) {
             throw new RuntimeException("Error loading properties file " + propertiesFilename, ex);
